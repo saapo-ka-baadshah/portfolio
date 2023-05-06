@@ -14,38 +14,18 @@ jobs:
         node-version: [14.x]
 
     steps:
-      - name: git-checkout
-        uses: actions/checkout@v2
-
-      - name: setup node
-        uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: Build
+      - name: npm ci, build and test
         run: |
           npm ci
-          npm run build
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+          npm run build --if-present
+          npm test
+      - name: deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: ./build
-
-  # Deployment job
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-
-    permissions:
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./build
