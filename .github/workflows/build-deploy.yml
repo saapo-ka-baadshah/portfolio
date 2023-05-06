@@ -37,6 +37,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.pages_url }}
     needs: build
+
+    permissions:
+      pages: write
+      id-token: write
+
     steps:
       - name: Deploy to github pages
         id: deployment
