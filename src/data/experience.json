@@ -1,0 +1,54 @@
+[
+    {
+        "employer": {
+            "name": "BOSCH",
+            "location": "Stuttgart – Deutschland",
+            "employments": [
+                {
+                    "position": "Werkstudent Autonomous Driving Cloud System",
+                    "timeline": "March 2021 – June 2022",
+                    "description": "• Deployment of ML pipelines on Azure DevOps with Azure ScaleSet VMs as agents using ARM templates\n• Development of resource lite alternative to ADO using GitHub Workflows, Terraform and Kubernetes\n• Development of Python based CATKIN tools to extract, structure raw data feed and train from vehicles into datasets\n• Implementation of continuous training environment for captured audio data called Acoustic Data Loop"
+                }
+            ]
+        }
+    },
+    {
+        "employer": {
+            "name": "Ferdinand Steinbeis Institut",
+            "location": "Heilbronn – Deutschland",
+            "employments": [
+                {
+                    "position": "Werkstudent Full Stack Engineer",
+                    "timeline": "March 2021 – June 2022",
+                    "description": "• Creation of low-cost pneumatic leakage detection system with Machine Learning\n• Development of Raspberry Pi based edge computing unit with Electron JS UI and Flask-REST for local computation for Tensorflow-lite models; Resource provisioning with SaltStack\n• Backend setup in StackIT cloud with NodeJS Express, Grafana, Prometheus and Supabase; Frontend in React\n• Setup of Azure CDN between Azure CN and Azure EU for large data transfers between China and Germany"
+                }
+            ]
+        }
+    },
+    {
+        "employer": {
+            "name": "Kan Innovation Pvt. Ltd.",
+            "location": "Mumbai – India",
+            "employments": [
+                {
+                    "position": "Embedded System Designer",
+                    "timeline": "June 2019 – Nov 2019",
+                    "description": "• Development of lightweight encryption for fast data transfer over RS232 interface\n• Development of I2C and RS232 based fault detection system for Piezo-resistive FSR array\n• Integration of fast encryption standards into Flask backend; Migration from Flask to Django"
+                }
+            ]
+        }
+    },
+    {
+        "employer": {
+            "name": "Dhansai Laboratories",
+            "location": "Mumbai – India",
+            "employments": [
+                {
+                    "position": "Systems Engineer",
+                    "timeline": "June 2018 – May 2019",
+                    "description": "• Designed IoT enabled end to end solutions for measurement devices in Diabetic Foot Ailment Industries, such as DSL HCP (Hot Cold Perception) and DSL VPT (Vibration Perception Threshold) using Django and Firebase"
+                }
+            ]
+        }
+    }
+]
