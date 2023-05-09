@@ -2,6 +2,7 @@
   "name": "portfolio-v2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://saapo-ka-baadshah.github.io/portfolio",
   "dependencies": {
     "@react-spring/parallax": "^9.7.2",
     "@react-spring/web": "^9.7.2",
