@@ -5,6 +5,7 @@ export default function Contact() {
   return (
     <div>
       <ParallaxLayer
+        id="contact"
         offset={4}
       >
         Contact

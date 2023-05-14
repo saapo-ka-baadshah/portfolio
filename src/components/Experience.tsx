@@ -5,6 +5,7 @@ export default function Experience() {
   return (
     <div>
       <ParallaxLayer
+        id="experience"
         offset={3}
       >
         Experience

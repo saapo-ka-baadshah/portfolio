@@ -5,6 +5,7 @@ export default function Education() {
   return (
     <div>
       <ParallaxLayer
+        id="education"
         offset={2}
       >
         Education

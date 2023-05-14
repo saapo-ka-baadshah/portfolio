@@ -4,6 +4,11 @@
   "private": true,
   "homepage": "https://saapo-ka-baadshah.github.io/portfolio",
   "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@heroicons/react": "^2.0.18",
+    "@material-tailwind/react": "^2.0.0",
+    "@mui/material": "^5.13.0",
     "@react-spring/parallax": "^9.7.2",
     "@react-spring/web": "^9.7.2",
     "@testing-library/jest-dom": "^5.16.5",
