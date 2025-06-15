@@ -5,6 +5,7 @@ import IContactInfo from '../abstractions/interfaces/IContactInfo';
 import SocialLinksData from '../information/SocialLinksData';
 import ISocialLink from '../abstractions/interfaces/ISocialLink';
 import COLOR_PALETTE from '../statics/color.palette';
+import ContactForm from './subcomponents/ContactForm';
 
 export default function Contact() {
   const [contacterName, setContacterName] = useState("");
@@ -114,38 +115,7 @@ export default function Contact() {
             className="bg-white/10 backdrop-blur-md p-8 rounded-2xl" 
             // style={{ ...parallaxStyle(0.03) }}
             >
-              <div className="space-y-6">
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full p-4 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50"
-                    onChange={(e) => setContacterName(e.target.value)}
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="w-full p-4 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50"
-                    onChange={(e) => setContacterEmail(e.target.value)}
-                  />
-                </div>
-                <div>
-                  <textarea
-                    placeholder="Your Message"
-                    rows={5}
-                    className="w-full p-4 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none"
-                    onChange={(e) => setContacterMessage(e.target.value)}
-                  />
-                </div>
-                <button
-                  className="w-full bg-white text-gray-900 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-                  onClick={async() => await handleContactSubmit}
-                >
-                  Send Message
-                </button>
-              </div>
+              <ContactForm/>
             </div>
           </div>
         </div>
