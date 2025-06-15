@@ -21,6 +21,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm ci, build and test
         env:
+          REACT_APP_FORMSPREE_FORM_ID: ${{ secrets.FORMSPREE_FORM_ID }}
           CI: false
         run: |
           npm i --legacy-peer-deps
