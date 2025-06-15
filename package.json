@@ -1,27 +1,25 @@
 {
   "name": "portfolio-v2",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.2",
+  "private": true,  
   "homepage": "https://saapo-ka-baadshah.github.io/portfolio",
   "dependencies": {
-    "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
-    "@heroicons/react": "^2.0.18",
-    "@material-tailwind/react": "^2.0.0",
-    "@mui/material": "^5.13.0",
-    "@react-spring/parallax": "^9.7.2",
-    "@react-spring/web": "^9.7.2",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
+    "@formspree/react": "^3.0.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.27",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@types/node": "^16.18.126",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "lucide-react": "^0.514.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
+    "react-vertical-timeline-component": "^3.5.3",
     "typescript": "^4.9.5",
+    "typewriter-effect": "^2.22.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -49,6 +47,10 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.2"
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "tailwindcss": "^3.4.17"
   }
 }
