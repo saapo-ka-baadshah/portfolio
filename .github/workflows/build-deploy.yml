@@ -23,7 +23,7 @@ jobs:
         env:
           CI: false
         run: |
-          npm ci
+          npm npm i --legacy-peer-deps
           npm run build --if-present
 
       - name: Upload Artifact
