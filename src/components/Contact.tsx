@@ -8,51 +8,6 @@ import COLOR_PALETTE from '../statics/color.palette';
 import ContactForm from './subcomponents/ContactForm';
 
 export default function Contact() {
-  const [contacterName, setContacterName] = useState("");
-  const [contacterEmail, setContacterEmail] = useState("");
-  const [contacterMessage, setContacterMessage] = useState("");
-
-  // TODO: Correct the Email Service with Formspree or some other Service
-  const handleContactSubmit = async() => {
-    if (contacterName == "") {
-      alert("Please Provide a valid Name");
-      return;
-    }
-
-    if (contacterEmail == "") {
-      alert("Please provide a valid Email");
-      return;      
-    }
-
-    if (contacterMessage == "") {
-      alert("Please Provide a valid Message");
-      return;
-    }
-    
-    try {
-      const response = await fetch(
-        'https://formspree.io/f/mqabqnro',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({contacterName, contacterEmail, contacterMessage})
-      });
-
-      if (response.ok) {
-        setTimeout(() => {
-          setContacterName("");
-          setContacterEmail("");
-          setContacterMessage("");
-        }, 3000);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-
-  };
-
   return (
     <section 
         id="contact" 
