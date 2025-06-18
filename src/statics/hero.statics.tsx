@@ -1,8 +1,8 @@
 const HeroStatics = {
-    TitleLine1: "Creative",
+    TitleLine1: "Innovative & Efficient",
     TitleLine2: "Software",
     TitleRoles: ["Developer", "Architect", "IoT Engineer"],
-    ProfileDescription: "Building amazing digital experiences with modern web technologies and creative problem-solving"
+    ProfileDescription: "Crafting scalable, clean, and efficient software solutions with .NET, Node.js, Python, and DevOps excellence"
 };
 
 export default HeroStatics;

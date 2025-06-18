@@ -4,11 +4,14 @@ import AboutData, { AboutSkillsTiles } from "../information/AboutData";
 import IAboutSkillTile from "../abstractions/interfaces/IAboutSkillTile";
 import React from "react";
 import COLOR_PALETTE from "../statics/color.palette";
+import StoryBlock from "./StoryBlock";
+import StoryData from "../information/StoryData";
+import Tilt from "react-parallax-tilt";
 
 const About: React.FC = () => {
 
     return (
-        <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div 
@@ -40,7 +43,7 @@ const About: React.FC = () => {
             // style={{ ...parallaxStyle(0.05) }}
             >
                 {AboutSkillsTiles.map((aboutSkill: IAboutSkillTile) => (
-                    <div 
+                    <Tilt 
                         className="p-6 rounded-2xl shadow-lg"
                         style={{ backgroundColor: COLOR_PALETTE.Quinery }}
                     >
@@ -50,10 +53,18 @@ const About: React.FC = () => {
                         <p className="text-gray-700">
                             {aboutSkill.Skills}
                         </p>
-                    </div>
+                    </Tilt>
                 ))}
             </div>
           </div>
+        </div>
+
+        {/* Story Block */}
+        <br/>
+        <div>
+          <StoryBlock
+            {...StoryData}
+          />
         </div>
       </section>
     ) ;

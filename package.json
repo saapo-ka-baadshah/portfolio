@@ -1,7 +1,7 @@
 {
   "name": "portfolio-v2",
   "version": "0.1.2",
-  "private": true,  
+  "private": true,
   "homepage": "https://saapo-ka-baadshah.github.io/portfolio",
   "dependencies": {
     "@formspree/react": "^3.0.0",
@@ -16,6 +16,7 @@
     "lucide-react": "^0.514.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-parallax-tilt": "^1.7.298",
     "react-scripts": "5.0.1",
     "react-vertical-timeline-component": "^3.5.3",
     "typescript": "^4.9.5",
